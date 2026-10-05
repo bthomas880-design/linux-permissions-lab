@@ -120,3 +120,8 @@ These errors reinforced the importance of exact spelling, capitalization, and re
 This lab demonstrates least privilege: the analyst can read the file but cannot modify it, while the outsider cannot read it.
 
 I ran the commands and verified the results myself in my WSL environment.
+## Screenshot Evidence
+
+The screenshot below shows group membership, file permissions, successful authorized reading, blocked unauthorized reading, and a denied write-permission check.
+
+![Linux permissions lab results](IMG_8933.png)
