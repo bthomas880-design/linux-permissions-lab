@@ -122,6 +122,29 @@ This lab demonstrates least privilege: the analyst can read the file but cannot 
 I ran the commands and verified the results myself in my WSL environment.
 ## Screenshot Evidence
 
+## More Practice: File Permissions
+
+I practiced changing permissions using numbers and letters, then tested access with two lab accounts.
+
+For permissions_practice.txt, I used permission mode 640:
+
+- Owner: read and write.
+- SecurityTeam group: read only.
+- Other users: no access.
+
+### Verified Results
+
+| Test | Result |
+| --- | --- |
+| lab_analyst reads the file | Allowed |
+| lab_outsider reads the file | Permission denied |
+| lab_analyst checks write access | Not allowed; exit status 1 |
+
+I also learned that users need permission to pass through the containing directories to reach a file.
+
+### Screenshot Evidence
+
+![Verified file permissions and access tests](IMG_8994.png)
 The screenshot below shows group membership, file permissions, successful authorized reading, blocked unauthorized reading, and a denied write-permission check.
 
 ![Linux permissions lab results](IMG_8933.png)
